@@ -1,13 +1,13 @@
 {% set name = "bayesbay" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bayesbay-{{ version }}.tar.gz
-  sha256: e263b6fda2dc3573d46bbdea85a518fa765933dd6e927ed7f64bb49c22ede616
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bayesbay-{{ version }}.tar.gz
+  sha256: 1e33e66ecd592ed65069d2805bbff387e52c8f97da7e65ce0456dc262fcc0702
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
